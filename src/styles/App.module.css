@@ -1,4 +1,8 @@
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: black;
+}
 .container__app {
-    background-color: rgb(4,4,25);
-    height: 100vh;
+  background-color: rgb(4, 4, 25);
 }
