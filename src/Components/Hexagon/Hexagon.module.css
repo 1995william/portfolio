@@ -18,7 +18,7 @@
   margin: 1px;
   transition: 2s;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  background: linear-gradient(90deg, rgb(10, 10, 10) 50%, rgba(0, 0, 0, 1) 50%);
+  background: linear-gradient(90deg, rgb(7, 7, 7) 50%, rgba(0, 0, 0, 1) 50%);
 }
 .hexagon:hover {
   transition: 0s;
@@ -30,22 +30,4 @@
   position: absolute;
   width: inherit;
   height: inherit;
-  animation: anim 10s infinite;
-}
-@keyframes anim {
-  0% {
-    background-color: rgba(10, 10, 10, 0.5);
-  }
-  25% {
-    background-color: rgba(15, 15, 15, 0.5);
-  }
-  50% {
-    background-color: rgb(20, 20, 20, 0.5);
-  }
-  75% {
-    background-color: rgb(30, 30, 30, 0.5);
-  }
-  100% {
-    background-color: rgb(40, 40, 40, 0.5);
-  }
 }
