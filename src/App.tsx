@@ -1,3 +1,4 @@
+import BemVindo from "./Components/BemVindo/BemVindo";
 import Header from "./Components/Header/Header";
 import Hexagon from "./Components/Hexagon/Hexagon";
 import Icons from "./Components/Particles/Particles";
@@ -10,6 +11,9 @@ function App() {
       <Hexagon />
       <Icons/>
       <Header/>
+      <main className={styles.main}>
+        <BemVindo/>
+      </main>
       </div>
     </>
   );
