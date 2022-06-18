@@ -1,7 +1,7 @@
 import TypeWriterEffect from "react-typewriter-effect";
 import { motion } from "framer-motion";
 import styles from "./Bemvindo.module.css";
-import rodrigoSvg from "../../assets/imgs/me.svg";
+import avatar from "../../assets/imgs/avatar.svg";
 
 export default function BemVindo() {
   return (
@@ -52,7 +52,7 @@ export default function BemVindo() {
           delay: 2,
         }}
       >
-        <img src={rodrigoSvg} alt="Rodrigo" />
+        <img src={avatar} alt="Rodrigo" />
       </motion.figure>
     </section>
   );
