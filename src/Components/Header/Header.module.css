@@ -4,6 +4,7 @@
   width: 100%;
   right: 5rem;
   top: 2rem;
+  z-index: 5;
 }
 .navegacao {
   display: flex;
@@ -85,15 +86,18 @@
     
     .navegacao ul {
         flex-direction: column;
-        background-color: rgb(11, 8, 39);
+        background-color: rgb(7, 7, 7);
         padding: 2rem 0;
         align-items: center;
+        justify-content: center;
         position: fixed;
         width: 100vw;
-        max-height: 50rem;
+        min-height: 100vh;
         top: 0;
         right: 0;
-        
+    }
+    .navegacao ul a {
+      font-size: 1.5rem;
     }
     .closeNavegacao {
         transition: 1s;
@@ -105,6 +109,6 @@
     }
     .burguer {
         display: block;
-        z-index: 2;
+        z-index: 10;
     }
 }
