@@ -10,11 +10,14 @@
   "dependencies": {
     "framer-motion": "^6.3.11",
     "react": "^18.0.0",
+    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^18.0.0",
-    "react-tsparticles": "^1.37.5"
+    "react-tsparticles": "^1.37.5",
+    "react-typewriter-effect": "^1.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
+    "@types/react-animate-on-scroll": "^2.1.5",
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^1.3.0",
     "typescript": "^4.6.3",
