@@ -4,10 +4,11 @@
 .main {
   position: absolute;
   top:50%;
-  z-index: 0;
+  z-index: 1;
 }
 @media(min-width: 760px) {
   .main {
     top: 20%;
+    box-sizing: border-box;
   }
 }
