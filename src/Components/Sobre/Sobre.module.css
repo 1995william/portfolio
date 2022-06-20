@@ -1,0 +1,68 @@
+.container__sobre {
+    padding: 15rem 0;
+}
+
+.container__sobre h1 {
+    color: #02A88A;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+.container__sobre article {
+    margin: 3rem auto;
+    max-width: 20rem;
+}
+.container__sobre p {
+    color: #ffff;
+    font-size: 1.2rem;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+.stacksTitulo {
+    margin: 1.5rem 0;
+}
+.stacksTitulo p {
+    color: #02A88A;
+    font-weight: bold;
+}
+.container__stacks{
+    display: flex;
+}
+
+.container__stacks img {
+    height: 30px;
+    margin-right: .5rem;
+}
+.container__sobre .container__imgRodrigo {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.container__sobre .container__imgRodrigo img {
+    max-height: 250px;
+}
+@media(min-width: 760px) {
+    .container__sobre {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+        justify-items: center;
+        padding: 30rem 0;
+    }
+    .container__sobre .titulo {
+        margin-top: 1rem;
+        grid-column: 1 / span 3;
+    }
+    .container__sobre article {
+        margin: 0;
+        max-width: 30rem;
+    }
+    .container__stacks img {
+        height: 50px;
+        margin-right: 1rem;
+    }
+    .container__sobre .container__imgRodrigo img {
+        max-height: 425px;
+    }
+}
