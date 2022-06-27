@@ -1,4 +1,4 @@
-import styles from "./Projetos.module.css";
+import styles from "./Projetos.module.scss";
 import html from "../../assets/imgs/html.svg";
 import css from "../../assets/imgs/css.svg";
 import js from "../../assets/imgs/js.svg";
@@ -15,6 +15,8 @@ export default function Projetos() {
       <div className={styles.projeto_titulo}>
         <h1>Projetos</h1>
       </div>
+
+    <article className={styles.card_animation}>
 
     <ScrollAnimation animateIn="animate__flipInX" delay={0.5 * 1000}>
 
@@ -40,6 +42,142 @@ export default function Projetos() {
       ]}
       />
     </ScrollAnimation>
+    </article>
+    <article className={styles.card_animation}>
+
+    <ScrollAnimation animateIn="animate__flipInX" delay={0.5 * 1000}>
+
+      <Card
+      titulo={"Where does it come from?"}
+      descricao ={"Lorem Ipsum is simply dummy text of the printing and typesetting industry."}
+      linguagens={[{
+          caminho: html,
+          nome: "html"
+        },
+        {
+          caminho: css,
+          nome: "css"
+        },
+        {
+          caminho: js,
+          nome: "JavaScript"
+        },
+        {
+          caminho: node,
+          nome: "node"
+        }
+      ]}
+      />
+    </ScrollAnimation>
+    </article>
+    <article className={styles.card_animation}>
+
+    <ScrollAnimation animateIn="animate__flipInX" delay={0.5 * 1000}>
+
+      <Card
+      titulo={"Where does it come from?"}
+      descricao ={"Lorem Ipsum is simply dummy text of the printing and typesetting industry."}
+      linguagens={[{
+          caminho: html,
+          nome: "html"
+        },
+        {
+          caminho: css,
+          nome: "css"
+        },
+        {
+          caminho: js,
+          nome: "JavaScript"
+        },
+        {
+          caminho: node,
+          nome: "node"
+        }
+      ]}
+      />
+    </ScrollAnimation>
+    </article>
+    <article className={styles.card_animation}>
+
+    <ScrollAnimation animateIn="animate__flipInX" delay={0.5 * 1000}>
+
+      <Card
+      titulo={"Where does it come from?"}
+      descricao ={"Lorem Ipsum is simply dummy text of the printing and typesetting industry."}
+      linguagens={[{
+          caminho: html,
+          nome: "html"
+        },
+        {
+          caminho: css,
+          nome: "css"
+        },
+        {
+          caminho: js,
+          nome: "JavaScript"
+        },
+        {
+          caminho: node,
+          nome: "node"
+        }
+      ]}
+      />
+    </ScrollAnimation>
+    </article>
+    <article className={styles.card_animation}>
+
+    <ScrollAnimation animateIn="animate__flipInX" delay={0.5 * 1000}>
+
+      <Card
+      titulo={"Where does it come from?"}
+      descricao ={"Lorem Ipsum is simply dummy text of the printing and typesetting industry."}
+      linguagens={[{
+          caminho: html,
+          nome: "html"
+        },
+        {
+          caminho: css,
+          nome: "css"
+        },
+        {
+          caminho: js,
+          nome: "JavaScript"
+        },
+        {
+          caminho: node,
+          nome: "node"
+        }
+      ]}
+      />
+    </ScrollAnimation>
+    </article>
+    <article className={styles.card_animation}>
+
+    <ScrollAnimation animateIn="animate__flipInX" delay={0.5 * 1000}>
+
+      <Card
+      titulo={"Where does it come from?"}
+      descricao ={"Lorem Ipsum is simply dummy text of the printing and typesetting industry."}
+      linguagens={[{
+          caminho: html,
+          nome: "html"
+        },
+        {
+          caminho: css,
+          nome: "css"
+        },
+        {
+          caminho: js,
+          nome: "JavaScript"
+        },
+        {
+          caminho: node,
+          nome: "node"
+        }
+      ]}
+      />
+    </ScrollAnimation>
+    </article>
   
     </section>
   );

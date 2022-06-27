@@ -1,6 +1,6 @@
 import TypeWriterEffect from "react-typewriter-effect";
 import { motion } from "framer-motion";
-import styles from "./Bemvindo.module.css";
+import styles from "./Bemvindo.module.scss"
 import avatar from "../../assets/imgs/avatar.svg";
 
 export default function BemVindo() {
@@ -39,17 +39,17 @@ export default function BemVindo() {
           startDelay={4000}
           cursorColor="#02A88A"
           text="Desenvolvedor Full Stack"
-          typeSpeed={60}
+          typeSpeed={50}
         />
       </article>
       <motion.figure
         className={styles.header}
-        initial={{ x: 800 }}
+        initial={{ x: 1000 }}
         animate={{ x: 0 }}
         transition={{
           duration: 2,
           ease: "easeInOut",
-          delay: 2,
+          delay: 4,
         }}
       >
         <img src={avatar} alt="Rodrigo" />

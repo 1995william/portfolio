@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 import MenuButton from "./MenuHamburguer/MenuHamburguer";
 export default function Header() {
   const [isOpen, setOpen] = useState(false);

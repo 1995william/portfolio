@@ -1,4 +1,4 @@
-import styles from "./Card.module.css";
+import styles from "./Card.module.scss";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { Icard } from "../../../types/card";

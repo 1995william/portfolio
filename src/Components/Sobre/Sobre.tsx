@@ -1,6 +1,6 @@
 import ScrollAnimation from "react-animate-on-scroll";
 import "animate.css/animate.min.css";
-import styles from "./Sobre.module.css";
+import styles from "./Sobre.module.scss";
 import rodrigoImg from "../../assets/imgs/rodrigo.png";
 import html from "../../assets/imgs/html.svg";
 import css from "../../assets/imgs/css.svg";
@@ -9,6 +9,7 @@ import ts from "../../assets/imgs/ts.svg";
 import node from "../../assets/imgs/node.svg";
 import react from "../../assets/imgs/react.svg";
 import mysql from "../../assets/imgs/mysql.svg";
+import sass from "../../assets/imgs/sass.svg";
 
 export default function Sobre() {
   return (
@@ -47,9 +48,10 @@ export default function Sobre() {
           </ScrollAnimation>
         </div>
         <figure className={styles.container__stacks}>
-          <ScrollAnimation animateIn="animate__bounceInLeft" delay={1.4 * 1000}>
+          <ScrollAnimation animateIn="animate__bounceInLeft" delay={1.2 * 1000}>
             <img src={html} alt="html" />
             <img src={css} alt="css" />
+            <img src={sass} alt="sass" />
             <img src={js} alt="js" />
             <img src={ts} alt="ts" />
             <img src={node} alt="node" />
@@ -59,7 +61,7 @@ export default function Sobre() {
         </figure>
       </article>
       <figure className={styles.container__imgRodrigo}>
-        <ScrollAnimation animateIn="animate__fadeInRight" delay={0.6 * 1000}>
+        <ScrollAnimation animateIn="animate__fadeInRight" delay={1.6 * 1000}>
           <img src={rodrigoImg} alt="rodrigo" />
         </ScrollAnimation>
       </figure>

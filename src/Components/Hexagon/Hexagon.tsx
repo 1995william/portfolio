@@ -1,5 +1,5 @@
 import Hexa from "./Hexa";
-import styles from "./Hexagon.module.css";
+import styles from "./Hexagon.module.scss";
 export default function Hexagon() {
   const rows = [];
   for (let i = 1; i <= 40; i++) {
