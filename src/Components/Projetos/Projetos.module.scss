@@ -1,0 +1,52 @@
+.container__projetos {
+  padding: 5rem 1rem;
+  overflow: hidden;
+  .projeto_titulo {
+    h1 {
+      color: #02a88a;
+      font-family: "Rajdhani", sans-serif;
+      text-align: center;
+      font-size: 2rem;
+    }
+  }
+  .card_animation {
+    max-width: 20rem;
+    min-height: 15rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .container__projetos {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    max-width: 40rem;
+    padding: 0;
+    margin: 0 auto;
+    gap: 1rem;
+    justify-items: center;
+    .projeto_titulo {
+      grid-column: 1 / span 2;
+    }
+    .card_animation {
+      margin: 0;
+      max-width: 25rem;
+      min-height: 10rem;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .container__projetos {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    max-width: 70rem;
+    gap: 3rem;
+    .projeto_titulo {
+      grid-column: 1 / span 3;
+    }
+  }
+  .card_animation {
+    max-width: 30rem;
+    min-height: 17rem;
+  }
+}
