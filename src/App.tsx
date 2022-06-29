@@ -1,4 +1,5 @@
 import BemVindo from "./Components/BemVindo/BemVindo";
+import Contato from "./Components/Contato/Contato";
 import Header from "./Components/Header/Header";
 import Hexagon from "./Components/Hexagon/Hexagon";
 import Icons from "./Components/Particles/Particles";
@@ -17,6 +18,7 @@ function App() {
         <BemVindo/>
         <Sobre/>
         <Projetos/>
+        <Contato/>
       </main>
       </div>
     </>
