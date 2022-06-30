@@ -8,15 +8,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@hookform/resolvers": "^2.9.3",
     "@react-icons/all-files": "^4.1.0",
     "animate.css": "^4.1.1",
     "framer-motion": "^6.3.11",
     "react": "^18.0.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^18.0.0",
+    "react-hook-form": "^7.33.0",
     "react-icons": "^4.4.0",
     "react-tsparticles": "^1.37.5",
-    "react-typewriter-effect": "^1.1.0"
+    "react-typewriter-effect": "^1.1.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",
