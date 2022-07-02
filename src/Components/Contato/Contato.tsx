@@ -5,16 +5,27 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { validationSchema } from "../../utils/validation";
+import { useState,useRef } from "react";
+import { sendEmail } from "../../service/sendEmail";
 
 export default function Contato() {
+  const [formOk, setForm] = useState(false);
+  const form = useRef<any>();
 
   const {register,handleSubmit,formState: { errors }} = useForm({
     resolver: yupResolver(validationSchema),
   });
-   function onSubmit() {
-    console.log('envio')
+
+  const verificaCampos = () => {
+    if(Object.keys(errors).length != 0) return setForm(false);
   }
-  return (
+
+   const onSubmit = () => {   
+    setForm(true);
+    sendEmail(form.current);
+ 
+   }
+   return (
     <section className={styles.container__contato}>
       <div className={styles.contato_titulo}>
         <h1>Contato</h1>
@@ -36,7 +47,7 @@ export default function Contato() {
           delay={0.6 * 1000}
         >
 
-        <form onSubmit={handleSubmit(onSubmit)} className={styles.formulario}>
+        <form ref={form} onSubmit={handleSubmit(onSubmit)} className={styles.formulario}>
         
           <label>
             Nome
@@ -44,6 +55,7 @@ export default function Contato() {
               type="text"
               id="nome"
               {...register("nome")}
+              onKeyUp={verificaCampos}
               placeholder="Nome completo"
               className={`${errors.nome != undefined ? styles.campoInvalido:''}` }
             />
@@ -57,6 +69,7 @@ export default function Contato() {
               id="email"
               placeholder="Digite seu melhor e-mail"
               {...register("email")}
+              onKeyUp={verificaCampos}
               className={`${errors.email != undefined ? styles.campoInvalido:''}` }
             />
             <span className={`${errors.email != undefined ? styles.mensagemInvalida:''}` }>{errors.email?.message ? errors.email?.message?.toString(): ''}</span>
@@ -70,9 +83,14 @@ export default function Contato() {
               rows={10}
               cols={20}
               {...register('mensagem')}
+             onKeyUp={verificaCampos}
               className={`${errors.mensagem != undefined ? styles.campoInvalido:''}` }
             ></textarea>
+            <div>
+
             <span className={`${errors.mensagem != undefined ? styles.mensagemInvalida:''}`}>{errors.mensagem?.message ? errors.mensagem?.message?.toString() : ''}</span>
+            <span className={`${formOk ? styles.mensagemSucesso: styles.invisivel}`}>Mensagem enviada com sucesso</span>
+            </div>
           </label>
 
           <div className={styles.container__botao}>
@@ -80,7 +98,7 @@ export default function Contato() {
               animateIn="animate__fadeInLeft"
               delay={0.6 * 1000}
             >
-            <button>
+            <button onClick={verificaCampos}>
               <FiSend />
               Enviar mensagem
             </button>
