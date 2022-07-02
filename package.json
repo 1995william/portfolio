@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "@hookform/resolvers": "^2.9.3",
     "@react-icons/all-files": "^4.1.0",
     "animate.css": "^4.1.1",
