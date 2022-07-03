@@ -9,7 +9,7 @@ import { useState,useRef } from "react";
 import { sendEmail } from "../../service/sendEmail";
 
 export default function Contato() {
-  const [formOk, setForm] = useState(false);
+  const [formOk, setFormOK] = useState(false);
   const form = useRef<any>();
 
   const {register,handleSubmit,formState: { errors }} = useForm({
@@ -17,16 +17,16 @@ export default function Contato() {
   });
 
   const verificaCampos = () => {
-    if(Object.keys(errors).length != 0) return setForm(false);
+    if(Object.keys(errors).length != 0) return setFormOK(false);
   }
 
    const onSubmit = () => {   
-    setForm(true);
+    setFormOK(true);
     sendEmail(form.current);
  
    }
    return (
-    <section className={styles.container__contato}>
+    <section className={styles.container__contato} id="contato">
       <div className={styles.contato_titulo}>
         <h1>Contato</h1>
       </div>
@@ -94,15 +94,10 @@ export default function Contato() {
           </label>
 
           <div className={styles.container__botao}>
-            <ScrollAnimation
-              animateIn="animate__fadeInLeft"
-              delay={0.6 * 1000}
-            >
             <button onClick={verificaCampos}>
               <FiSend />
               Enviar mensagem
             </button>
-            </ScrollAnimation>
           </div>
         </form>
         </ScrollAnimation>
