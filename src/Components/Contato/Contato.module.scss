@@ -1,5 +1,5 @@
 .container__contato {
-  padding: 10rem 1rem;
+  margin: 20rem 1rem 20rem 1rem;
   overflow: hidden;
   color: #ffff;
   p {
@@ -10,6 +10,7 @@
     text-align: center;
   }
   .contato_titulo {
+    padding-top: 5rem;
     h1 {
       color: #02a88a;
       font-family: "Rajdhani", sans-serif;
@@ -76,7 +77,6 @@
       .mensagemSucesso {
         color: #02a88a;
         min-height: 1.5rem;
-        // margin: 1rem 0;
       }
       
     }
@@ -110,7 +110,7 @@
 }
 @media (min-width: 768px) {
   .container__contato {
-    padding: 10rem 6rem;
+    padding: 2rem 6rem;
     min-width: 100vw;
     display: grid;
     gap: 1rem;
@@ -122,6 +122,7 @@
       grid-column: 1 / span 2;
     }
     p {
+      margin: 2.5rem 0;
       line-height: 2rem;
     }
 
@@ -139,11 +140,17 @@
   }
 }
 @media (min-width: 960px) {
-  .formulario {
-    label {
-      min-width: 23rem;
-      input {
-        min-width: inherit;
+  .container__contato {
+    padding: 5rem 6rem;
+    .contato_titulo {
+      padding: 0;
+    }
+    .formulario {
+      label {
+        min-width: 23rem;
+        input {
+          min-width: inherit;
+        }
       }
     }
   }
@@ -151,6 +158,12 @@
 @media (min-width: 1200px) {
   .container__contato {
     max-width: 80%;
+    .contato_titulo {
+      padding: 0;
+    }
+    .formulario {
+      min-height: 40rem;
+    }
     .container__emailLogo {
       img {
         min-height: 350px;
