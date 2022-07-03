@@ -7,7 +7,7 @@ export default function BemVindo() {
   return (
     <section className={styles.container__Bemvindo}>
       <article>
-        <TypeWriterEffect
+        {/* <TypeWriterEffect
           textStyle={{
             fontFamily: "Rajdhani",
             color: "#ffff",
@@ -40,7 +40,7 @@ export default function BemVindo() {
           cursorColor="#02A88A"
           text="Desenvolvedor Full Stack"
           typeSpeed={50}
-        />
+        /> */}
       </article>
       <motion.figure
         className={styles.header}
