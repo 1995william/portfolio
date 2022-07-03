@@ -13,8 +13,8 @@ import sass from "../../assets/imgs/sass.svg";
 
 export default function Sobre() {
   return (
-    <section className={styles.container__sobre}>
-      <div className={styles.titulo}>
+    <section className={styles.container__sobre} id="sobre">
+      <div className={styles.sobre_titulo}>
         <h1>Sobre</h1>
       </div>
 
