@@ -10,7 +10,7 @@ import styles from "./styles/App.module.scss";
 function App() {
   return (
     <>
-      <div className={styles.container__app}>
+      <div className={styles.container__app} id="home">
       <Hexagon />
       <Icons/>
       <Header/>
