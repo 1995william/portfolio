@@ -11,7 +11,8 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 export default function Projetos() {
   return (
-    <section className={styles.container__projetos}>
+  
+    <section className={styles.container__projetos} id="projetos">
       <div className={styles.projeto_titulo}>
         <h1>Projetos</h1>
       </div>
