@@ -1,48 +1,35 @@
-import TypeWriterEffect from "react-typewriter-effect";
 import { motion } from "framer-motion";
-import styles from "./Bemvindo.module.scss"
+import styles from "./Bemvindo.module.scss";
 import avatar from "../../assets/imgs/avatar.svg";
+import Typewriter from "typewriter-effect";
 
 export default function BemVindo() {
   return (
     <section className={styles.container__Bemvindo}>
       <article>
-        <TypeWriterEffect
-          textStyle={{
-            fontFamily: "Rajdhani",
-            color: "#ffff",
-            fontSize: "2em",
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter.changeDelay(70).start().typeString("Olá, me chamo");
           }}
-          startDelay={2000}
-          cursorColor="#ffff"
-          hideCursorAfterText={true}
-          text="Olá, me chamo"
-          typeSpeed={60}
         />
-        {/* <TypeWriterEffect
-          textStyle={{
-            fontFamily: "Rajdhani",
-            color: "#ffff",
-            fontSize: "3em",
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+              .pauseFor(1500)
+              .changeDelay(70)
+              .start()
+              .typeString("Rodrigo William");
           }}
-          startDelay={3000}
-          cursorColor="#ffff"
-          hideCursorAfterText={true}
-          text="Rodrigo William"
-          typeSpeed={60}
         />
-        <TypeWriterEffect
-          textStyle={{
-            fontFamily: "Rajdhani",
-            color: "#02A88A",
-            fontWeight: 500,
-            fontSize: "2em",
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+              .pauseFor(3500)
+              .changeDelay(70)
+              .start()
+              .typeString("Desenvolvedor Full Stack");
           }}
-          startDelay={4000}
-          cursorColor="#02A88A"
-          text="Desenvolvedor Full Stack"
-          typeSpeed={50}
-        /> */}
+        />
       </article>
       <motion.figure
         className={styles.header}
@@ -51,7 +38,7 @@ export default function BemVindo() {
         transition={{
           duration: 2,
           ease: "easeInOut",
-          delay: 4,
+          delay: 5,
         }}
       >
         <img src={avatar} alt="Rodrigo" />
