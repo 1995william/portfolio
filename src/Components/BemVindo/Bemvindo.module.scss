@@ -12,13 +12,34 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     min-width: 100%;
     min-height: 15rem;
-
-    h1 {
+    //typewriter
+    div {
+      max-width: 22rem;
       min-height: 3.87rem;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      span {
+        text-align: center;
+        font-family: "Rajdhani";
+        color: #ffff;
+        font-size: 2rem;
+      }
+      &:nth-child(1) span:nth-child(2), &:nth-child(2) span:nth-child(2), &:nth-child(3) span:nth-child(2){
+        display: none;
+      }
+     
+      &:nth-child(2) span {
+       font-size: 3rem;
+       
+      }
+      &:nth-child(3) span {
+        color: #02A88A;
+      }
     }
+    //fim typewriter
   }
   figure {
     margin-top: 3rem;
@@ -30,9 +51,11 @@
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 35rem;
+
     article {
       min-width: 25rem;
       max-height: 20rem;
+      align-items: initial;
     }
   }
 }
