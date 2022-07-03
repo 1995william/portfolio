@@ -1,7 +1,8 @@
 .container__projetos {
-  padding: 5rem 1rem;
+  margin: 15rem 1rem;
   overflow: hidden;
   .projeto_titulo {
+    padding-top: 5rem;
     h1 {
       color: #02a88a;
       font-family: "Rajdhani", sans-serif;
@@ -42,6 +43,7 @@
     max-width: 70rem;
     gap: 3rem;
     .projeto_titulo {
+      padding-top: 6rem;
       grid-column: 1 / span 3;
     }
   }
