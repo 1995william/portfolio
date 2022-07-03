@@ -7,14 +7,15 @@ export default function BemVindo() {
   return (
     <section className={styles.container__Bemvindo}>
       <article>
-        {/* <TypeWriterEffect
+        <TypeWriterEffect
           textStyle={{
             fontFamily: "Rajdhani",
             color: "#ffff",
             fontSize: "2em",
           }}
           startDelay={2000}
-          cursorColor="#02a88a00"
+          cursorColor="#ffff"
+          hideCursorAfterText={true}
           text="Olá, me chamo"
           typeSpeed={60}
         />
@@ -25,7 +26,8 @@ export default function BemVindo() {
             fontSize: "3em",
           }}
           startDelay={3000}
-          cursorColor="#02a88a00"
+          cursorColor="#ffff"
+          hideCursorAfterText={true}
           text="Rodrigo William"
           typeSpeed={60}
         />
@@ -40,7 +42,7 @@ export default function BemVindo() {
           cursorColor="#02A88A"
           text="Desenvolvedor Full Stack"
           typeSpeed={50}
-        /> */}
+        />
       </article>
       <motion.figure
         className={styles.header}
