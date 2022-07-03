@@ -1,14 +1,15 @@
 .header {
   position: fixed;
+  display: flex;
+  align-items: center;
   width: 100%;
-  right: 5rem;
-  top: 2rem;
+  height: 8vh;
   z-index: 5;
-
+  overflow: hidden;
   .navegacao {
     display: flex;
     justify-content: flex-end;
-    width: inherit;
+    min-width: 95%;
 
     ul {
       display: flex;
@@ -79,16 +80,24 @@
     display: none;
   }
 }
+.bgAtivo {
+  transition: .5s ease-in-out;
+  background: rgb(15, 15, 15);
+}
+.bgDesativo {
+  transition: .5s ease-in-out;
+  background: transparent;
+}
+
 @media (max-width: 768px) {
   .header {
-    right: 2rem;
+    background: none;
     .navegacao {
       width: 100%;
 
       ul {
         flex-direction: column;
-        background-color: rgb(7, 7, 7);
-        padding: 2rem 0;
+        background-color: rgb(15, 15, 15);
         align-items: center;
         justify-content: center;
         position: fixed;
@@ -102,16 +111,17 @@
       }
     }
     .closeNavegacao {
-      transition: 1s;
+      transition: .5s;
       transform: translateY(-100vh);
     }
     .openNavegacao {
-      transition: 1s;
+      transition: .5s;
       transform: translateY(0);
     }
     .burguer {
       display: block;
       z-index: 10;
+      margin-right: 2rem;
     }
   }
 }
