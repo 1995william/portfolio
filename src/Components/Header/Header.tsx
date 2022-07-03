@@ -1,9 +1,20 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./Header.module.scss";
 import MenuButton from "./MenuHamburguer/MenuHamburguer";
 export default function Header() {
   const [isOpen, setOpen] = useState(false);
+  const [bgHeader, setBgHeader] = useState(false);
+
+  const listenScrollEvent = () => {
+   
+   window.scrollY > 100 ? setBgHeader(true): setBgHeader(false);
+
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', listenScrollEvent);
+  
+  }, []);
 
   const handlerClick = () => {
     setOpen(false);
@@ -11,7 +22,7 @@ export default function Header() {
   return (
     <>
       <motion.header
-        className={styles.header}
+        className={`${bgHeader ? `${styles.bgAtivo} ${styles.header}`: `${styles.bgDesativo} ${styles.header}`}`}
         initial={{ y: -400 }}
         animate={{ y: 0 }}
         transition={{
