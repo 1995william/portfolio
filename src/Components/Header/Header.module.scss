@@ -2,20 +2,20 @@
   position: fixed;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 8vh;
   z-index: 5;
   overflow: hidden;
   .navegacao {
     display: flex;
     justify-content: flex-end;
-    min-width: 95%;
+    min-width: 95vw;
 
     ul {
       display: flex;
       gap: 3rem;
       list-style: none;
-
+      overflow: hidden;
       a {
         text-decoration: none;
         font-family: "Rajdhani", sans-serif;

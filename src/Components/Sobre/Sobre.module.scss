@@ -1,5 +1,6 @@
 .container__sobre {
-  margin: 7rem 1rem;
+  padding: 7rem 1rem;
+  z-index: 2;
   .sobre_titulo {
     padding-top: 5rem;
     h1 {
@@ -10,7 +11,7 @@
     }
   }
   article {
-    margin: 3rem auto;
+    padding: 3rem 0;
     max-width: 20rem;
   }
   p {

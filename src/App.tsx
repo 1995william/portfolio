@@ -10,7 +10,7 @@ import styles from "./styles/App.module.scss";
 function App() {
   return (
     <>
-      <div className={styles.container__app} id="home">
+      <div className={styles.app} id="home">
       <Hexagon />
       <Icons/>
       <Header/>
@@ -21,7 +21,7 @@ function App() {
         <Contato/>
       </main>
       </div>
-    </>
+      </>
   );
 }
 
