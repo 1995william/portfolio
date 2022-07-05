@@ -5,9 +5,8 @@
   justify-content: space-between;
   min-width: 100vw;
   z-index: 2;
-  padding: 0 1rem;
+  padding: 5rem 1rem 10rem 1rem;
   overflow: hidden;
-
   article {
     display: flex;
     flex-direction: column;
@@ -50,7 +49,7 @@
   .container__Bemvindo {
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom: 35rem;
+    padding-top: 10rem;
 
     article {
       min-width: 25rem;

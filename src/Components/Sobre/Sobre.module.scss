@@ -1,8 +1,8 @@
 .container__sobre {
-  padding: 7rem 1rem;
+  padding: 0 1rem 10rem 1rem;
   z-index: 2;
   .sobre_titulo {
-    padding-top: 5rem;
+    padding-top: 2rem;
     h1 {
       color: #02a88a;
       font-family: "Rajdhani", sans-serif;
@@ -11,7 +11,8 @@
     }
   }
   article {
-    padding: 3rem 0;
+    padding: 2rem 0;
+    margin: 0 auto;
     max-width: 20rem;
   }
   p {
@@ -51,9 +52,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     justify-items: center;
-    margin: 40rem 2rem 20rem 2rem;
+    margin: 20rem 2rem 20rem 2rem;
     .sobre_titulo {
-      margin-top: 1rem;
+      margin-top: 6rem;
       grid-column: 1 / span 3;
     }
     article {
