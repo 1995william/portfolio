@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
+import ScrollAnimation from "react-animate-on-scroll";
 import styles from "./Bemvindo.module.scss";
 import avatar from "../../assets/imgs/avatar.svg";
 import Typewriter from "typewriter-effect";
+import Botao from "../Botao/Botao";
+import { FiDownload } from "react-icons/fi";
 
 export default function BemVindo() {
   return (
@@ -9,14 +12,14 @@ export default function BemVindo() {
       <article>
         <Typewriter
           onInit={(typewriter) => {
-            typewriter.changeDelay(70).start().typeString("Olá, me chamo");
+            typewriter.changeDelay(20).start().typeString("Olá, me chamo");
           }}
         />
         <Typewriter
           onInit={(typewriter) => {
             typewriter
-              .pauseFor(1500)
-              .changeDelay(70)
+              .pauseFor(500)
+              .changeDelay(20)
               .start()
               .typeString("Rodrigo William");
           }}
@@ -24,23 +27,39 @@ export default function BemVindo() {
         <Typewriter
           onInit={(typewriter) => {
             typewriter
-              .pauseFor(3500)
-              .changeDelay(70)
+              .pauseFor(1000)
+              .changeDelay(20)
               .start()
               .typeString("Desenvolvedor Full Stack");
           }}
         />
+        <motion.div
+         initial={{ opacity:0 }}
+         animate={{ opacity: 1 }}
+         transition={{
+           duration: 1,
+           ease: "easeInOut",
+           delay: 2,
+         }}
+        >
+
+        <Botao
+        icone={<FiDownload size={'20px'}/>}
+        texto="Download CV"
+        link={"https://drive.google.com/file/d/17MsqyyD2-ql4sFHQhliov3RASQfkUSPs/view?usp=sharing"}
+        />
+        </motion.div>
       </article>
+ 
       <motion.figure
-        className={styles.header}
-        initial={{ x: 1000 }}
+        initial={{ x: 800 }}
         animate={{ x: 0 }}
         transition={{
-          duration: 2,
+          duration: 1,
           ease: "easeInOut",
-          delay: 5,
+          delay: 2,
         }}
-      >
+        >
         <img src={avatar} alt="Rodrigo" />
       </motion.figure>
     </section>
