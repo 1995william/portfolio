@@ -10,8 +10,8 @@ import react from "../../assets/imgs/react.svg";
 import mysql from "../../assets/imgs/mysql.svg";
 import git from "../../assets/imgs/git.svg";
 import vscode from "../../assets/imgs/vscode.svg";
-import styles from "./mainParticles.module.scss";
-import "./Particles.scss";
+import styles from "./Particles.module.scss";
+
 export default function Icons() {
   return (
     <section className={styles.container__icons}>
