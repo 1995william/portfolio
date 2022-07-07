@@ -52,8 +52,8 @@ export default function BemVindo() {
       </article>
  
       <motion.figure
-        initial={{ x: 800 }}
-        animate={{ x: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{
           duration: 1,
           ease: "easeInOut",
