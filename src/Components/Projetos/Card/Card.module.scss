@@ -23,6 +23,14 @@
       display: flex;
       gap: 1rem;
       justify-content: space-between;
+      a {
+        color: #ffff;
+        transition: 0.3s;
+        &:hover {
+          color: #02a88a;
+          transition: 0.3s;
+        }
+      }
     }
     .linguagens {
       display: flex;
