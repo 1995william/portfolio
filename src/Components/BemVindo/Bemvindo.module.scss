@@ -26,16 +26,17 @@
         color: #ffff;
         font-size: 2rem;
       }
-      &:nth-child(1) span:nth-child(2), &:nth-child(2) span:nth-child(2), &:nth-child(3) span:nth-child(2){
+      &:nth-child(1) span:nth-child(2),
+      &:nth-child(2) span:nth-child(2),
+      &:nth-child(3) span:nth-child(2) {
         display: none;
       }
-     
+
       &:nth-child(2) span {
-       font-size: 3rem;
-       
+        font-size: 3rem;
       }
       &:nth-child(3) span {
-        color: #02A88A;
+        color: #02a88a;
       }
     }
     //fim typewriter
@@ -49,8 +50,7 @@
   .container__Bemvindo {
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 10rem;
-
+    padding-top: 15rem;
     article {
       min-width: 25rem;
       max-height: 20rem;
