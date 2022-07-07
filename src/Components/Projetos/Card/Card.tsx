@@ -4,7 +4,7 @@ import { FiExternalLink } from "react-icons/fi";
 import { Icard } from "../../../types/card";
 
 
-export default function Card({titulo, descricao, linguagens}:Icard) {
+export default function Card({titulo, descricao, linguagens,page,repositorio}:Icard) {
   return (
     <div className={styles.container__cards}>
       <div className={styles.cards}>
@@ -14,8 +14,8 @@ export default function Card({titulo, descricao, linguagens}:Icard) {
         <div className={styles.container__repositorio}>
 
           <div className={styles.repositorio}>
-            <FaGithub size={'25px'} />
-            <FiExternalLink size={'25px'}/>
+           <a href={repositorio} target="_blank"> <FaGithub size={'25px'} /></a>
+           <a href={page} target="_blank"><FiExternalLink size={'25px'}/></a>
           </div>
 
           <div className={styles.linguagens}>
