@@ -1,0 +1,29 @@
+.container__botao {
+  margin-top: 2rem;
+   a {
+    text-decoration: none;
+
+    button {
+      display: flex;
+      justify-content: space-evenly;
+      gap: .5rem;
+      align-items: center;
+      width: 12rem;
+      height: 2.8rem;
+      padding: 0 0.5rem;
+      background-color: rgba(2, 168, 138, 0.5);
+      font-family: "Work Sans", sans-serif;
+      font-size: 1.1rem;
+      text-align: center;
+      color: #ffff;
+      border: none;
+      border-radius: 2px;
+      white-space: nowrap;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #02a88a;
+      }
+    }
+   } 
+}
