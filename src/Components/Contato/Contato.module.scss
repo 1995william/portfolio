@@ -98,6 +98,11 @@
         gap: 1.2rem;
         a {
           color: #ffff;
+          transition: 0.3s;
+          &:hover {
+            color: #02a88a;
+            transition: 0.3s;
+          }
         }
       }
     }
