@@ -19,7 +19,7 @@ export default function Sobre() {
       </div>
 
       <article>
-        <ScrollAnimation animateIn="animate__fadeInLeft" delay={0.4 * 1000}>
+        <ScrollAnimation animateIn="animate__fadeInLeft" delay={0.2 * 1000}>
           <p>
             Técnico em eletrotécnico em transição de carreira, com uma grande
             paixão por programação. Gosto de aprender coisas novas e ao mesmo
@@ -27,7 +27,7 @@ export default function Sobre() {
             Front-End e Back-End.
           </p>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="animate__fadeInLeft" delay={0.6 * 1000}>
+        <ScrollAnimation animateIn="animate__fadeInLeft" delay={0.4 * 1000}>
           <p>
             Desenvolvo sites e aplicações utilizando HTML, CSS, e JavaScript.
             Tenho familiaridade em desenvolver layouts que me fornecem. Estou
@@ -35,7 +35,7 @@ export default function Sobre() {
             minhas mãos.
           </p>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="animate__fadeInLeft" delay={0.8 * 1000}>
+        <ScrollAnimation animateIn="animate__fadeInLeft" delay={0.6 * 1000}>
           <p>
             Sou uma pessoa dedicada que corre atrás para realizar seus sonhos,
             trabalhador e orientado a resultados, sempre busco alcançar minha
@@ -43,12 +43,12 @@ export default function Sobre() {
           </p>
         </ScrollAnimation>
         <div className={styles.stacksTitulo}>
-          <ScrollAnimation animateIn="animate__fadeInLeft" delay={1 * 1000}>
+          <ScrollAnimation animateIn="animate__fadeInLeft" delay={0.8 * 1000}>
             <p>Minhas principais stacks</p>
           </ScrollAnimation>
         </div>
         <figure className={styles.container__stacks}>
-          <ScrollAnimation animateIn="animate__bounceInLeft" delay={1.2 * 1000}>
+          <ScrollAnimation animateIn="animate__bounceInLeft" delay={1 * 1000}>
             <img src={html} alt="html" />
             <img src={css} alt="css" />
             <img src={sass} alt="sass" />
@@ -61,7 +61,7 @@ export default function Sobre() {
         </figure>
       </article>
       <figure className={styles.container__imgRodrigo}>
-        <ScrollAnimation animateIn="animate__fadeInRight" delay={1.6 * 1000}>
+        <ScrollAnimation animateIn="animate__fadeInRight" delay={1.2 * 1000}>
           <img src={rodrigoImg} alt="rodrigo" />
         </ScrollAnimation>
       </figure>
