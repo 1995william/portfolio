@@ -1,5 +1,5 @@
 import { FiSend, FiMail } from "react-icons/fi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import styles from "./Contato.module.scss";
 import email from "../../assets/imgs/email.png";
 import ScrollAnimation from "react-animate-on-scroll";
@@ -119,6 +119,7 @@ export default function Contato() {
           <a href="https://github.com/1995william" target="_blank"><FaGithub size={"40px"}/></a> 
           <a href="https://www.linkedin.com/in/rodrigo-william1/" target="_blank"><FaLinkedin size={"40px"}/></a> 
           <a href="mailto:rwps1234@gmail.com" target="_blank"><FiMail size={"40px"}/></a> 
+          <a href="https://api.whatsapp.com/send?phone=+5521979792369&text=Olá! sou Rodrigo William. Sinta se a vontade para mandar mensagem." target="_blank"><FaWhatsapp size={"40px"}/></a> 
           
         </ScrollAnimation>
       </figure>
