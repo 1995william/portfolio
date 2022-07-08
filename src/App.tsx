@@ -1,5 +1,6 @@
 import BemVindo from "./Components/BemVindo/BemVindo";
 import Contato from "./Components/Contato/Contato";
+import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Hexagon from "./Components/Hexagon/Hexagon";
 import Icons from "./Components/Particles/Particles";
@@ -9,7 +10,7 @@ import styles from "./styles/App.module.scss";
 
 function App() {
   return (
-    <>
+    
       <div className={styles.app} id="home">
       <Hexagon />
       <Icons/>
@@ -19,9 +20,9 @@ function App() {
         <Sobre/>
         <Projetos/>
         <Contato/>
+        <Footer/>
       </main>
       </div>
-      </>
   );
 }
 
