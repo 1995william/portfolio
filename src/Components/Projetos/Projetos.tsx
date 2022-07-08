@@ -5,7 +5,6 @@ import js from "../../assets/imgs/js.svg";
 import ts from "../../assets/imgs/ts.svg";
 import node from "../../assets/imgs/node.svg";
 import react from "../../assets/imgs/react.svg";
-import mysql from "../../assets/imgs/mysql.svg";
 import angular from "../../assets/imgs/angular.svg";
 import jquery from "../../assets/imgs/jquery.svg";
 import Card from "./Card/Card";
