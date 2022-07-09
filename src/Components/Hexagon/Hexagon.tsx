@@ -1,8 +1,11 @@
+import useWindowDimensions from "../../utils/useWindowDimensions";
 import Hexa from "./Hexa";
 import styles from "./Hexagon.module.scss";
 export default function Hexagon() {
   const rows = [];
-  for (let i = 1; i <= 40; i++) {
+  const { height} = useWindowDimensions();
+  
+  for (let i = 1; i <= height / 37; i++) {
     rows.push(
       <div key={i} className={styles.row}>
         <Hexa />

@@ -10,19 +10,21 @@ import styles from "./styles/App.module.scss";
 
 function App() {
   return (
-    
-      <div className={styles.app} id="home">
+    <>
       <Hexagon />
-      <Icons/>
-      <Header/>
-      <main className={styles.main}>
-        <BemVindo/>
-        <Sobre/>
-        <Projetos/>
-        <Contato/>
-        <Footer/>
-      </main>
+      <div className={styles.app} id="home">
+        <Icons />
+        <Header />
+
+        <main className={styles.main}>
+          <BemVindo />
+          <Sobre />
+          <Projetos />
+          <Contato />
+          <Footer />
+        </main>
       </div>
+    </>
   );
 }
 

@@ -50,7 +50,8 @@
   .container__Bemvindo {
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 15rem;
+    padding: 0;
+    min-height: 100vh;
     article {
       min-width: 25rem;
       max-height: 20rem;

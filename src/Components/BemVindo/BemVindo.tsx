@@ -5,11 +5,12 @@ import avatar from "../../assets/imgs/avatar.svg";
 import Typewriter from "typewriter-effect";
 import Botao from "../Botao/Botao";
 import { FiDownload } from "react-icons/fi";
-
+import mouse from "../../assets/imgs/mouse.svg"
 export default function BemVindo() {
   return (
     <section className={styles.container__Bemvindo}>
       <article>
+        {/* <img src={mouse} alt="" /> */}
         <Typewriter
           onInit={(typewriter) => {
             typewriter.changeDelay(20).start().typeString("Olá, me chamo");
