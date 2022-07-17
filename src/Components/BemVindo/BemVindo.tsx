@@ -10,7 +10,7 @@ export default function BemVindo() {
   return (
     <section className={styles.container__Bemvindo}>
       <article>
-        {/* <img src={mouse} alt="" /> */}
+       
         <Typewriter
           onInit={(typewriter) => {
             typewriter.changeDelay(20).start().typeString("Olá, me chamo");
