@@ -12,7 +12,7 @@ import Botao from "../Botao/Botao";
 
 export default function Contato() {
   const [formOk, setFormOK] = useState(false);
-  const form = useRef<any>();
+  const form = useRef <HTMLFormElement | null>(null);
 
   const {register,handleSubmit,formState: { errors }} = useForm({
     resolver: yupResolver(validationSchema),
@@ -24,8 +24,8 @@ export default function Contato() {
 
    const onSubmit = () => {   
      setFormOK(true);
-     sendEmail(form.current);
-     form.current.reset();
+    sendEmail(form.current!);
+    form.current?.reset();
    }
    return (
     <section className={styles.container__contato} id="contato">

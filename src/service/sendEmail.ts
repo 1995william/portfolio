@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 
-export const sendEmail = (formulario: HTMLFormElement) => {
+export const sendEmail = (formulario: HTMLFormElement) => { 
   emailjs
     .sendForm(
       "mensagemPortfolio",
