@@ -3,8 +3,5 @@ export interface Icard {
     descricao: string;
     page: string;
     repositorio: string;
-    linguagens: Array<{
-        caminho: string,
-        nome: string
-    }>
+    linguagens: string[];
 }
