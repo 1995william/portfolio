@@ -1,11 +1,9 @@
 import { motion } from "framer-motion";
-import ScrollAnimation from "react-animate-on-scroll";
 import styles from "./Bemvindo.module.scss";
 import avatar from "../../assets/imgs/avatar.svg";
 import Typewriter from "typewriter-effect";
 import Botao from "../Botao/Botao";
 import { FiDownload } from "react-icons/fi";
-import mouse from "../../assets/imgs/mouse.svg"
 export default function BemVindo() {
   return (
     <section className={styles.container__Bemvindo}>
@@ -47,7 +45,7 @@ export default function BemVindo() {
         <Botao
         icone={<FiDownload size={'20px'}/>}
         texto="Download CV"
-        link={"https://drive.google.com/file/d/17MsqyyD2-ql4sFHQhliov3RASQfkUSPs/view?usp=sharing"}
+        link={"https://drive.google.com/file/d/11a9XyELLN1D1VB91rq4a7nH7CaM7m5TF/view?usp=sharing"}
         />
         </motion.div>
       </article>
